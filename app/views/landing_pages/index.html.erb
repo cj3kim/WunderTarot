@@ -19,7 +19,16 @@
 
     <div id='tarot-area' class='col' data-bind='foreach: majorArcanaCards'>
 
-      <img src="" alt="" data-bind="attr:{src: imagePath}" />
+      <div class="flip" data-bind="click: flipMe">
+        <div class="card">
+          <div class="face front" data-bind="attr:{style: bgImagePath}">
+          </div>
+
+          <div class="face back">
+            <span data-bind='text: meaning'></span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

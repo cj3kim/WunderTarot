@@ -13,8 +13,8 @@ WunderTarot.ViewModels.MajorArcana = function (options) {
     console.log("WT - VMs - filterFunction");
     console.log(regex);
 
-    var name  = model.get('name');
-    var bool = regex.test(name);
+    var name  = "the " + model.get('name');
+    var bool  = regex.test(name);
 
     regex = null
     name  = null

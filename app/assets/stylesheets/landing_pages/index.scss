@@ -4,12 +4,13 @@ div#home-page-header {
     font-size: 72px;
     text-align:right;
   }
-}
 
-span {
-	color:#B22222;
-	font-family: "vivaldi", cursive;
-	font-size:110px;
+  span {
+    color:#B22222;
+    font-family: "vivaldi", cursive;
+    font-size:110px;
+  }
+
 }
 
 
@@ -28,20 +29,9 @@ div#major-arcana-display {
       width: 80%;
       height: 100%;
       overflow: hidden;
-
-      img {
-        width:230px;
-        height:419px;
-
-        display: block;
-        float: left;
-        margin: 5px;
-
-
-
-        border-radius: 5px;
-        border: solid 2px black;
-      }
+    }
+    span {
+      font: 13px;
     }
   }
 }

@@ -11,4 +11,23 @@ WunderTarot.ViewModels.TarotCard = function(model, options) {
     return _.template("/assets/major_arcana/<%= name %>.jpg", { name: name });
   })();
 
+  _this.meaning = model.get('meaning');
+
+  _this.bgImagePath = "background-image: url('" + this.imagePath + "');";
+
+  _this.flipMe = function (data, e) {
+    console.log("Wt - VMs - TarotCard");
+
+    var $container = $(e.currentTarget);
+    var $card =  $container.find('.card');
+    console.log($card);
+
+    var bool = $card.hasClass('flipped');
+    if (bool) {
+      $card.removeClass('flipped');
+    } else {
+      $card.addClass('flipped');
+    }
+    return false;
+  };
 };
