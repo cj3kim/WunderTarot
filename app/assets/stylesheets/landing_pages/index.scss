@@ -1,0 +1,47 @@
+div#home-page-header {
+  background-color:#ffd700;
+  h1 {
+    font-size: 72px;
+    text-align:right;
+  }
+}
+
+span {
+	color:#B22222;
+	font-family: "vivaldi", cursive;
+	font-size:110px;
+}
+
+
+div#major-arcana-display {
+  margin-top: 20px;
+  div.container {
+    overflow: hidden;
+
+    div#search-area {
+      width: 20%;
+      height: 800px;
+      background-color: blue;
+    }
+
+    div#tarot-area {
+      width: 80%;
+      height: 100%;
+      overflow: hidden;
+
+      img {
+        width:230px;
+        height:419px;
+
+        display: block;
+        float: left;
+        margin: 5px;
+
+
+
+        border-radius: 5px;
+        border: solid 2px black;
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+MajorArcanaViewModel = function () {
+
+}
