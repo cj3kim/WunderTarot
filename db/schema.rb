@@ -43,19 +43,6 @@ ActiveRecord::Schema.define(version: 20140227044449) do
     t.integer  "band_id"
   end
 
-  create_table "stripe_customers", force: true do |t|
-    t.string   "customer_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "stripe_recipients", force: true do |t|
-    t.string   "recipient_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "description"
-  end
-
   create_table "tarot_cards", force: true do |t|
     t.string   "name"
     t.text     "meaning"

@@ -13,13 +13,13 @@
     <div id='search-area' class='col'>
       <div class="container">
 
-        <input type="text" value="" />
+        <input type="text" value="" data-bind="value: searchValue, valueUpdate: 'input'"/>
       </div>
     </div>
 
     <div id='tarot-area' class='col' data-bind='foreach: majorArcanaCards'>
-      <img src="" alt="" data-bind="attr:{src: imagePath}" />
 
+      <img src="" alt="" data-bind="attr:{src: imagePath}" />
     </div>
   </div>
 </div>
