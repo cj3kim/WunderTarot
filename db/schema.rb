@@ -58,8 +58,13 @@ ActiveRecord::Schema.define(version: 20140227044449) do
 
   create_table "tarot_cards", force: true do |t|
     t.string   "name"
+    t.text     "meaning"
     t.text     "description"
-    t.string   "type"
+    t.boolean  "major_arcana"
+    t.integer  "major_arcana_number"
+    t.integer  "suit_number"
+    t.string   "suit"
+    t.string   "astrology"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
