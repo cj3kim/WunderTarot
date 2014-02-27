@@ -15,5 +15,6 @@
 //= require turbolinks
 //= require ./lib/knockback-full-stack
 //= require ./lib/backbone-associations.js
+//= require ./wunderTarot
 //= require_tree ./lib
 //= require_tree .
