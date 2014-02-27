@@ -15,8 +15,5 @@
 //= require turbolinks
 //= require ./lib/knockback-full-stack
 //= require ./lib/backbone-associations.js
-//= require bandPatron
 //= require_tree ./lib
-//= require_tree ./models
-//= require_tree ./collections
 //= require_tree .
