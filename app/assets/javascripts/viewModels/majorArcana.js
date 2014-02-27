@@ -1,4 +1,4 @@
-MajorArcanaViewModel = function () {
+WunderTarot.ViewModels.MajorArcana = function () {
 
 
-}
+};
