@@ -1,14 +1,20 @@
 div#home-page-header {
-  background-color:#ffd700;
-  h1 {
-    font-size: 72px;
-    text-align:right;
-  }
+  background-color: #ffd700;
 
-  span {
-    color:#B22222;
-    font-family: "vivaldi", cursive;
-    font-size:110px;
+  overflow: hidden;
+
+  div.container {
+    h1 {
+      display: block;
+      float: right;
+      font-size: 72px;
+    }
+
+    span {
+      color:#B22222;
+      font-family: "vivaldi", cursive;
+      font-size:110px;
+    }
   }
 
 }
@@ -20,23 +26,43 @@ div#major-arcana-display {
     overflow: hidden;
 
     div#search-area {
-      width: 20%;
-      height: 800px;
-      background-color: blue;
+      div.container {
+        width: 180px;
+        height: 800px;
+        padding: 0px 5px 5px 5px;
+
+        h3 {
+          margin-top: 30px;
+          font-size: 35px;
+        }
+
+        input {
+          width: 150px;
+          margin-top: 20px;
+        }
+
+        p {
+          margin-top: 20px;
+        }
+      }
     }
 
     div#tarot-area {
-      width: 80%;
+      width: 83%;
       height: 100%;
       overflow: hidden;
+      padding-top: 20px;
+      margin-left: 20px;
 
       div.face.back {
         p {
           margin: 50px 0px 50px 0px;
+          font-size: 30px;
+          line-height: 40px;
         }
       }
-
     }
+
     span {
       font: 13px;
     }

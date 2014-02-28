@@ -4,6 +4,7 @@ WunderTarot.ViewModels.TarotCard = function(model, options) {
   var _this = this;
 
   _this.name = model.get('name');
+  _this.cardName = "The " + model.get('name');
 
   _this.imagePath = (function () {
     var name = _this.name.replace(/ /g, "_").toLowerCase();

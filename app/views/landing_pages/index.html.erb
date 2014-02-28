@@ -12,8 +12,28 @@
   <div class="container">
     <div id='search-area' class='col'>
       <div class="container">
+        <h3> Search Box</h3>
 
         <input type="text" value="" data-bind="value: searchValue, valueUpdate: 'input'"/>
+
+        <p>Use the search box to filter through the major arcana cards.</p>
+
+        <p>Click on a card and it will flip to show you its definition.</p>
+
+        <h3>About</h3>
+
+        <p> Hi! My name is Chris and I am a professional web developer.
+          I built this site because I had a terrible time looking up 
+          Tarot card definitions on the web. This web application is 
+          meant to solve that issue.</p>
+
+        <p>
+          My intention is to start building more features and get a community going.
+          If you're interested in helping out, please shoot me an email at
+          <a href='mailto:chris@wundercode.net'>chris@wundercode.net</a>
+        </p>
+
+
       </div>
     </div>
 
@@ -25,7 +45,7 @@
           </div>
 
           <div class="face back">
-            <p data-bind='text: name'></p>
+            <p data-bind='text: cardName'></p>
             <p data-bind='text: meaning'></span>
           </div>
         </div>

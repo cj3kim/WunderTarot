@@ -1,29 +1,38 @@
 .flip {
   -webkit-perspective: 800;
-  width: 230px;
-  height: 400px;
-  position: relative;
+  width: 244px;
+  height: 414px;
+
   margin: 10px;
+  position: relative;
+
   float: left;
+
 }
 .flip .card.flipped {
   -webkit-transform: rotatey(-180deg);
 }
 .flip .card {
-  width: 100%;
-  height: 100%;
+  width: 230px;
+  height: 400px;
+
+  padding: 7px;
+
+  border: solid 1px black;
+  border-radius: 5px;
   -webkit-transform-style: preserve-3d;
   -webkit-transition: 0.5s;
 
 }
 .flip .card .face {
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  width: 210px;
+  height: 380px;
+  padding: 10px;
   -webkit-backface-visibility: hidden ;
   z-index: 2;
   text-align: center;
-  background-size:100% !important;
+  background-size: 230px 400px !important;
+  background-repeat: no-repeat;
 }
 
 .flip .card .front {
@@ -31,5 +40,7 @@
   z-index: 1;
 }
 .flip .card .back {
+  border: solid 1px black;
+  overflow: hidden;
   -webkit-transform: rotatey(-180deg);
 }
