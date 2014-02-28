@@ -1,4 +1,4 @@
-require './shifter/struct_csv'
+require './struct_csv'
 
 class Shifter
 
