@@ -8,7 +8,7 @@ WunderTarot.Views.MajorArcana = Backbone.View.extend({
 
   bindView: function () {
     var self = this;
-    var collection = new WunderTarot.Collections.MajorArcana;
+    var collection = new WunderTarot.Collections.All;
 
     collection.fetch({
       success: function (_collection) {
