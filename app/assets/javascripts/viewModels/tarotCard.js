@@ -8,7 +8,34 @@ WunderTarot.ViewModels.TarotCard = function(model, options) {
   var suit = model.get('suit');
 
 
-  _this.cardName = majorArcana ? ("The " + name) : (name + " of " + suit.charAt(0).toUpperCase() + suit.substring(1).toLowerCase());
+  if (majorArcana) {
+    var article = "The ";
+    switch (name) {
+      case 'Judgement':
+        article = "";
+        break;
+      case 'Death':
+        article = "";
+        break;
+      case 'Justice':
+        article = "";
+        break;
+      case 'Strength':
+        article = "";
+        break;
+      case 'Temperance':
+        article = "";
+        break;
+      case 'Wheel of Fortune':
+        article = "";
+        break;
+      default:
+        // code
+    }
+    _this.cardName = article + name;
+  } else {
+    _this.cardName =  name + " of " + suit.charAt(0).toUpperCase() + suit.substring(1).toLowerCase();
+  }
 
   _this.imagePath = (function () {
     var name = model.get('name').replace(/ /g, "_").toLowerCase();
