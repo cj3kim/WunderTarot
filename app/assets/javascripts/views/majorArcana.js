@@ -12,8 +12,6 @@ WunderTarot.Views.MajorArcana = Backbone.View.extend({
 
     collection.fetch({
       success: function (_collection) {
-        console.log("WunderTarot - Views - MajorArcana");
-        console.log("Successfully fetched the major arcana cards");
         var options = {
           collection: _collection,
           $el: this.$el

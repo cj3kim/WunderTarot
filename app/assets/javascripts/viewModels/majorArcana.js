@@ -10,8 +10,6 @@ WunderTarot.ViewModels.MajorArcana = function (options) {
 
   this.filterFunction = function (model) {
     var regex = new RegExp(_this.searchValue(), "i");
-    console.log("WT - VMs - filterFunction");
-    console.log(regex);
 
     var name  = "the " + model.get('name') + " of " + model.get('suit');
     var bool  = regex.test(name);
@@ -30,10 +28,4 @@ WunderTarot.ViewModels.MajorArcana = function (options) {
   };
 
   this.majorArcanaCards = kb.collectionObservable(options.collection, newOptions);
-
-
-  this.computedValue = ko.computed(function () {
-    console.log(_this.searchValue());
-  });
-
 };
