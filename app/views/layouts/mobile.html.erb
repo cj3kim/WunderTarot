@@ -4,16 +4,32 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
     <%= stylesheet_link_tag    asset_url("mobile_version/mobile.css"), media: "all", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag asset_url("application.js"), "data-turbolinks-track" => true %>
+    <%= javascript_include_tag asset_url("mobileVersion/mobile.js"), "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
   </head>
 
   <body>
     <div id='search-input' class='row'>
+      <input type="text" value="" />
     </div>
 
-    <div id='infinite-card-scroll' class='row'>
+    <div id='infinite-card-scroll' class='row' data-bind='foreach: majorArcanaCards'>
+      <div class="flip" data-bind="click: flipMe">
+        <div class="card">
+          <div class="face front" data-bind="attr:{style: bgImagePath}">
+          </div>
+
+          <div class="face back">
+            <p data-bind='text: cardName'></p>
+            <p data-bind='text: meaning'></span>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <script type="text/javascript" charset="utf-8">
+      jQuery(document).ready(function () {
+      });
+    </script>
   </body>
 </html>

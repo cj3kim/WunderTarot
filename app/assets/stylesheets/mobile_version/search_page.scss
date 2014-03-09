@@ -1,0 +1,30 @@
+
+$width: 320px;
+$height: 480px;
+
+body {
+  width: $width;
+}
+
+div#search-input {
+  width: $width;
+  height: 50px;
+  background-color: brown;
+  overflow: hidden;
+  input {
+    width: 280px;
+    height: 30px;
+    margin: 10px auto;
+    display: block;
+  }
+}
+
+div#infinite-card-scroll {
+  width: $width;
+  height: 430px;
+  background-color: purple;
+  overflow: hidden;
+
+  div.flip {
+  }
+}
