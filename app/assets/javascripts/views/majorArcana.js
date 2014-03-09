@@ -1,9 +1,7 @@
 WunderTarot.Views.MajorArcana = Backbone.View.extend({
-  el: "div#major-arcana-display",
-
   initialize: function (options) {
+    console.log(this.$el);
     this.bindView();
-
   },
 
   bindView: function () {
@@ -19,7 +17,7 @@ WunderTarot.Views.MajorArcana = Backbone.View.extend({
 
         var viewModel = new WunderTarot.ViewModels.MajorArcana(options);
 
-        kb.applyBindings(viewModel, self.$el[0]);
+        kb.applyBindings(viewModel, self.el);
       },
       error: function (_collection) {
         console.log("WunderTarot - Views - MajorArcana");

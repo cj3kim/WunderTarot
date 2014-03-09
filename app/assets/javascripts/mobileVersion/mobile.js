@@ -1,5 +1,6 @@
 //= require jquery
-//= require ./vendor/knockback.min
-//= require ./vendor/infinity
 //= require ../wunderTarot
+//= require ../lib/knockback-full-stack
+//= require_tree ../views
 //= require_tree ../viewModels
+//= require_tree ../collections

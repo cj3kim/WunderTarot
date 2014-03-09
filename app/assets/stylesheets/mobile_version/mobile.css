@@ -1,5 +1,5 @@
 /*
  *= require_tree ../base
- *= require ../landing_pages/flip
+ *= require ./flip
  *= require ./search_page
  */

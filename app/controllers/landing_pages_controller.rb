@@ -1,7 +1,7 @@
 class LandingPagesController < ActionController::Base
 
   def index
-    layout 'application'
+    render('landing_pages/index', layout:'application')
   end
 
   def subdomain

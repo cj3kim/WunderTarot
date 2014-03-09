@@ -10,7 +10,7 @@
 
   <body>
     <div id='search-input' class='row'>
-      <input type="text" value="" />
+      <input type="text" data-bind="value: searchValue, valueUpdate: 'input'" value="" />
     </div>
 
     <div id='infinite-card-scroll' class='row' data-bind='foreach: majorArcanaCards'>
@@ -29,6 +29,7 @@
 
     <script type="text/javascript" charset="utf-8">
       jQuery(document).ready(function () {
+        new WunderTarot.Views.MajorArcana({el: $("body")})
       });
     </script>
   </body>
