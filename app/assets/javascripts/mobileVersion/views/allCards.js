@@ -1,4 +1,4 @@
-WunderTarot.Views.MajorArcana = Backbone.View.extend({
+WunderTarot.Views.AllCards = Backbone.View.extend({
   initialize: function (options) {
     this.bindView();
   },
@@ -14,12 +14,12 @@ WunderTarot.Views.MajorArcana = Backbone.View.extend({
           $el: this.$el
         };
 
-        var viewModel = new WunderTarot.ViewModels.MajorArcana(options);
+        var viewModel = new WunderTarot.ViewModels.AllCards(options);
 
         kb.applyBindings(viewModel, self.el);
       },
       error: function (_collection) {
-        console.log("WunderTarot - Views - MajorArcana");
+        console.log("WunderTarot - Views - AllCards");
         console.log("There was an error fetching the major arcana cards");
       }
     });
