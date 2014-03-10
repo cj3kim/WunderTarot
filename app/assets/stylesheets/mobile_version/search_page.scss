@@ -4,6 +4,7 @@ $height: 480px;
 
 body {
   width: $width;
+  height: 480px;
 }
 
 div#search-input {
@@ -23,5 +24,4 @@ div#infinite-card-scroll {
   width: $width;
   height: 430px;
   overflow-y: scroll;
-
 }
